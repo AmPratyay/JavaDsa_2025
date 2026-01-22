@@ -1,4 +1,4 @@
-package org.example.arrays.striver_lecture03;
+package striver.sheet.arrays.striver_lecture03;
 
 public class Problem11 {
 

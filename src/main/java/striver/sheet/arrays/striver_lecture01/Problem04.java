@@ -1,4 +1,4 @@
-package org.example.arrays.striver_lecture01;
+package striver.sheet.arrays.striver_lecture01;
 
 import java.util.HashSet;
 import java.util.Set;
