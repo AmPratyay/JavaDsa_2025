@@ -1,6 +1,8 @@
 package aditya_verma_algos.binary_search;
 
-public class FirstAndLastOccurrence {
+public class FirstAndLastOccurrence_03 {
+
+    // Assumption : Array is ascending order
 
     public static int firstOccurrence(int[] arr, int target) {
         int result = -1;
@@ -50,5 +52,9 @@ public class FirstAndLastOccurrence {
 
         System.out.println(resIdxFirstOccurrence);
         System.out.println(resIdxLastOccurrence);
+
+        // Count of Element in sorted array using binary search
+
+        System.out.println("count: " + (resIdxLastOccurrence - resIdxFirstOccurrence + 1));
     }
 }

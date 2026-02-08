@@ -1,22 +1,21 @@
 package aditya_verma_algos.binary_search;
 
-public class BinarySearchAscending {
-
-    // Search the target element using binary search
+public class BinarySearchDescending_02 {
 
     public static int binarySearch(int[] arr, int target) {
-        int start = 0;
-        int end = arr.length - 1;
-
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
+        if (arr == null || arr.length == 0)
+            return -1;
+        int low = 0;
+        int high = arr.length - 1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
 
             if (arr[mid] == target) {
                 return mid;
             } else if (arr[mid] > target) {
-                end = mid - 1;
+                low = mid + 1;
             } else {
-                start = mid + 1;
+                high = mid - 1;
             }
         }
         return -1;
@@ -24,7 +23,7 @@ public class BinarySearchAscending {
 
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
         int target = 9;
 
         int resIdx = binarySearch(arr, target);
